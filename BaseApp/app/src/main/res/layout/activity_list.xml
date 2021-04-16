@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <TextView
+        android:id="@+id/tv_indicated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cachorros indicados para crianças:"/>
+
+    <TextView
+        android:id="@+id/tv_value_indicated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@id/tv_indicated"
+        />
+
+    <TextView
+        android:id="@+id/tv_not_indicated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_indicated"
+        android:text="Cachorros não indicados para crianças:"/>
+
+    <TextView
+        android:id="@+id/tv_value_not_indicated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_indicated"
+        app:layout_constraintStart_toEndOf="@id/tv_not_indicated"
+        />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_indicated"
+        android:text="Total de Cachorros: "/>
+
+    <TextView
+        android:id="@+id/tv_value_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_not_indicated"
+        app:layout_constraintStart_toEndOf="@id/tv_total"
+        />
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/tv_total"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_list_dogs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

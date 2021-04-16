@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Base App</string>
+    <string name="string_hello">Hello World!</string>
+    <string name="id_1">Identificador 1</string>
+    <string name="id_2">Identificador 2</string>
+    <string name="save_dogs">Cadastrar Cachorros</string>
+    <string name="list_dogs">Listar Cachorros</string>
+    <string name="ask_kids">É indicado para crianças?</string>
+    <string name="breed">Raça</string>
+    <string name="price_avg">Preço Médio</string>
+    <string name="save">Cadastrar</string>
+    <string name="error_save_dog">Erro ao salvar o cachorro</string>
+    <string name="error_breed">A raça deve ser preenchida</string>
+    <string name="error_price">O preço medio de ser preenchido</string>
+    <string name="error_invalid">Digite corretamente</string>
+    <string name="res_success">Cão cadastrado com sucesso</string>
+    <string name="res_error">erro</string>
+    <string name="error_api_response">erro ao listar na api</string>
+    <string name="avg_price"> - Preço Médio: </string>
+    <string name="text_breed">Raça: </string>
+    <string name="text_indicated"> - Indicado para Crianças: </string>
+</resources>
